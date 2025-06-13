@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:code",
  "creation": "2025-06-13 11:59:35.379879",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,7 +19,8 @@
   {
    "fieldname": "code",
    "fieldtype": "Data",
-   "label": "Coupon Code"
+   "label": "Coupon Code",
+   "unique": 1
   },
   {
    "fieldname": "discount_type",
@@ -59,10 +61,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 12:02:55.472025",
+ "modified": "2025-06-13 16:11:41.718771",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Coupon",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

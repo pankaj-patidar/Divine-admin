@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ORD-.#####",
  "creation": "2025-06-13 10:27:38.906989",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -151,10 +152,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 12:05:08.036965",
+ "modified": "2025-06-13 16:01:13.957220",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Orders",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

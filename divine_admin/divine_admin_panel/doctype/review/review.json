@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "RIVW-.######",
  "creation": "2025-06-12 19:18:06.522734",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -68,10 +69,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-12 19:21:12.835992",
+ "modified": "2025-06-13 16:10:15.402822",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Review",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

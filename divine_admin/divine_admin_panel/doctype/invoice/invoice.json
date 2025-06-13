@@ -1,25 +1,30 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "INV-.####",
+ "autoname": "INV-.######",
  "creation": "2025-06-13 12:08:32.567647",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "invoice_number",
-  "order",
-  "invoice_date",
+  "section_break_rwtj",
   "customer_name",
   "customer_email",
-  "seller",
   "billing_address",
-  "items",
+  "column_break_htcq",
+  "invoice_number",
+  "invoice_date",
+  "order",
+  "seller",
+  "section_break_olbh",
+  "payment_method",
+  "payment_status",
+  "column_break_txya",
   "subtotal",
   "gst_percent",
   "gst_amount",
   "total_amount",
-  "payment_status",
-  "payment_method",
+  "section_break_opwy",
+  "items",
   "notes"
  ],
  "fields": [
@@ -109,12 +114,33 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_rwtj",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "column_break_htcq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_olbh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_txya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_opwy",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 14:09:06.858076",
+ "modified": "2025-06-13 16:04:31.493955",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Invoice",
