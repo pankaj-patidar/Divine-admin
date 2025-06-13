@@ -1,0 +1,73 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2025-06-13 12:08:48.121887",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "product",
+        "product_name",
+        "qty",
+        "price",
+        "gst_percent",
+        "gst_amount",
+        "total"
+    ],
+    "fields": [
+        {
+            "fieldname": "product",
+            "label": "Product",
+            "fieldtype": "Link",
+            "options": "Products",
+            "reqd": 1
+        },
+        {
+            "fieldname": "product_name",
+            "label": "Product Name",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "qty",
+            "label": "Quantity",
+            "fieldtype": "Int",
+            "reqd": 1
+        },
+        {
+            "fieldname": "price",
+            "label": "Price",
+            "fieldtype": "Currency",
+            "reqd": 1
+        },
+        {
+            "fieldname": "gst_percent",
+            "label": "GST %",
+            "fieldtype": "Float"
+        },
+        {
+            "fieldname": "gst_amount",
+            "label": "GST Amount",
+            "fieldtype": "Currency"
+        },
+        {
+            "fieldname": "total",
+            "label": "Total Amount",
+            "fieldtype": "Currency",
+            "read_only": 1
+        }
+    ],
+    "grid_page_length": 50,
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [],
+    "modified": "2025-06-13 12:08:48.121887",
+    "modified_by": "Administrator",
+    "module": "Divine Admin Panel",
+    "name": "Invoice Item",
+    "owner": "Administrator",
+    "permissions": [],
+    "row_format": "Dynamic",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}

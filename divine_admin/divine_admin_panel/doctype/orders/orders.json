@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-13 10:27:38.906989",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vdko",
+  "customer",
+  "customer_name",
+  "shipping_address",
+  "column_break_eghe",
+  "customer_email",
+  "customer_phone",
+  "section_break_lxoe",
+  "payment_methods",
+  "payment_status",
+  "order_status",
+  "order_date",
+  "is_cancelled",
+  "column_break_esjn",
+  "tracking_id",
+  "shipment",
+  "return_request",
+  "coupon_applied",
+  "section_break_cefh",
+  "order_items",
+  "total_amount",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vdko",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "shipping_address",
+   "fieldtype": "Link",
+   "label": "Shipping Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_eghe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email"
+  },
+  {
+   "fieldname": "customer_phone",
+   "fieldtype": "Data",
+   "label": "Customer Phone"
+  },
+  {
+   "fieldname": "section_break_cefh",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "order_items",
+   "fieldtype": "Table",
+   "label": "Order Items",
+   "options": "Order Items"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "section_break_lxoe",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nPending\nFailed\nRefunded"
+  },
+  {
+   "fieldname": "column_break_esjn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "label": "Order Status",
+   "options": "Pending\nConfirmed\nShipped\nDelivered\nCancelled"
+  },
+  {
+   "fieldname": "payment_methods",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "COD\nUPI\nCard\nNet Banking"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cancelled",
+   "fieldtype": "Check",
+   "label": "Is Cancelled"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Placed Date"
+  },
+  {
+   "fieldname": "tracking_id",
+   "fieldtype": "Data",
+   "label": "Tracking ID"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "shipment",
+   "fieldtype": "Link",
+   "label": "Shipment",
+   "options": "Shipment"
+  },
+  {
+   "fieldname": "return_request",
+   "fieldtype": "Link",
+   "label": "Return Request",
+   "options": "Return Request"
+  },
+  {
+   "fieldname": "coupon_applied",
+   "fieldtype": "Link",
+   "label": "Coupon Applied",
+   "options": "Coupon"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-13 12:05:08.036965",
+ "modified_by": "Administrator",
+ "module": "Divine Admin Panel",
+ "name": "Orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

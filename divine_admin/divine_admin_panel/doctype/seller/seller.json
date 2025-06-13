@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-12 17:56:21.204440",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic",
+  "first_name",
+  "last_name",
+  "seller_type",
+  "company_name",
+  "column_break_mfpm",
+  "status",
+  "logo",
+  "logo_display",
+  "contact_details_section",
+  "email_id",
+  "mobile_no",
+  "column_break_shfs",
+  "address",
+  "section_break_nnpx",
+  "gst_number",
+  "products_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "seller_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seller Type",
+   "options": "Individual\nCompany",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mfpm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "products_tab",
+   "fieldtype": "Tab Break",
+   "label": "Products"
+  },
+  {
+   "depends_on": "eval:doc.seller_type == \"Company\"",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Comapany Name",
+   "mandatory_depends_on": "eval:doc.seller_type == \"Company\""
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "depends_on": "eval:doc.logo",
+   "fieldname": "logo_display",
+   "fieldtype": "Image",
+   "label": "Logo",
+   "options": "logo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Section Break",
+   "hide_border": 1,
+   "label": "Basic"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "hide_border": 1,
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Phone",
+   "label": "Mobile No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_shfs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "section_break_nnpx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "GSTIN"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "logo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-12 18:32:10.502313",
+ "modified_by": "Administrator",
+ "module": "Divine Admin Panel",
+ "name": "Seller",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
