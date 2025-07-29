@@ -46,10 +46,11 @@
    "label": "HSN Code"
   },
   {
+   "default": "User",
    "fieldname": "product_owner",
    "fieldtype": "Link",
    "label": "Product Owner",
-   "options": "User"
+   "options": "Seller"
   },
   {
    "fieldname": "column_break_uzwr",
@@ -129,7 +130,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-12 19:14:10.395057",
+ "modified": "2025-07-29 17:58:17.377382",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Products",

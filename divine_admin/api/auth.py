@@ -1,6 +1,7 @@
 import frappe
 from frappe.utils.password import update_password
 from frappe import _
+from frappe.auth import LoginManager
 
 @frappe.whitelist(allow_guest=True)
 def signup(**kwargs):
@@ -84,3 +85,35 @@ def signup(**kwargs):
         "message": "Account created",
         "user": data.email
     }
+
+
+@frappe.whitelist(allow_guest=True)
+def login(email=None, password=None):
+    if not email or not password:
+        return {
+            "status": "error",
+            "message": "Email and password are required"
+        }
+
+    try:
+        # Use Frappe's built-in login manager
+        frappe.local.login_manager = LoginManager()
+        frappe.local.login_manager.authenticate(email, password)
+        frappe.local.login_manager.post_login()
+
+        user = frappe.get_doc("User", email)
+
+        return {
+            "status": "success",
+            "message": "Logged in",
+            "sid": frappe.session.sid,
+            "user": user.name,
+            "roles": [role.role for role in user.roles],
+            "full_name": user.full_name or user.first_name
+        }
+
+    except frappe.AuthenticationError:
+        return {
+            "status": "error",
+            "message": "Invalid email or password"
+        }
