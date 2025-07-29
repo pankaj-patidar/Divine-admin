@@ -19,7 +19,9 @@
   {
    "fieldname": "category_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Category Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -62,7 +64,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 16:11:04.180617",
+ "modified": "2025-07-29 19:02:38.555323",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Product Category",

@@ -17,9 +17,11 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
    "link_filters": "[[\"User\",\"role\",\"=\",\"Customer\"]]",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_otbo",
@@ -28,12 +30,14 @@
   {
    "fieldname": "sub_total",
    "fieldtype": "Int",
-   "label": "Sub Total"
+   "label": "Sub Total",
+   "read_only": 1
   },
   {
    "fieldname": "total",
    "fieldtype": "Int",
-   "label": "Total"
+   "label": "Total Amount",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_fiwh",
@@ -55,7 +59,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-29 18:49:58.606734",
+ "modified": "2025-07-29 19:07:01.859973",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Cart",

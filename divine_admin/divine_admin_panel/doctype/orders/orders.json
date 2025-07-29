@@ -38,10 +38,13 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
+   "fetch_from": "customer.full_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
@@ -49,22 +52,30 @@
   {
    "fieldname": "shipping_address",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Shipping Address",
-   "options": "Address"
+   "options": "Address",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_eghe",
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "customer.email",
+   "fetch_if_empty": 1,
    "fieldname": "customer_email",
    "fieldtype": "Data",
-   "label": "Customer Email"
+   "label": "Customer Email",
+   "reqd": 1
   },
   {
+   "fetch_from": "customer.mobile_no",
+   "fetch_if_empty": 1,
    "fieldname": "customer_phone",
    "fieldtype": "Data",
-   "label": "Customer Phone"
+   "label": "Customer Phone",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_cefh",
@@ -75,7 +86,8 @@
    "fieldname": "order_items",
    "fieldtype": "Table",
    "label": "Order Items",
-   "options": "Order Items"
+   "options": "Order Items",
+   "reqd": 1
   },
   {
    "fieldname": "total_amount",
@@ -90,8 +102,10 @@
   {
    "fieldname": "payment_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Payment Status",
-   "options": "Paid\nPending\nFailed\nRefunded"
+   "options": "Paid\nPending\nFailed\nRefunded",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_esjn",
@@ -106,8 +120,10 @@
   {
    "fieldname": "payment_methods",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Payment Method",
-   "options": "COD\nUPI\nCard\nNet Banking"
+   "options": "COD\nUPI\nCard\nNet Banking",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -152,7 +168,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 16:01:13.957220",
+ "modified": "2025-07-29 19:11:31.473149",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Orders",

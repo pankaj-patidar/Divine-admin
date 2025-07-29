@@ -15,9 +15,9 @@
   "column_break_uzwr",
   "brand",
   "category",
-  "selling_price",
   "mrp",
   "discount_per",
+  "selling_price",
   "section_break_pafo",
   "short_description",
   "product_image",
@@ -43,14 +43,16 @@
   {
    "fieldname": "hsn_code",
    "fieldtype": "Data",
-   "label": "HSN Code"
+   "label": "HSN Code",
+   "reqd": 1
   },
   {
    "default": "User",
    "fieldname": "product_owner",
    "fieldtype": "Link",
    "label": "Product Owner",
-   "options": "Seller"
+   "options": "Seller",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_uzwr",
@@ -77,14 +79,18 @@
    "fieldname": "selling_price",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Selling Price"
+   "label": "Selling Price",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "mrp",
    "fieldtype": "Currency",
-   "label": "MRP"
+   "label": "MRP",
+   "reqd": 1
   },
   {
+   "default": "0",
    "fieldname": "discount_per",
    "fieldtype": "Percent",
    "label": "Discount %",
@@ -97,7 +103,8 @@
   {
    "fieldname": "short_description",
    "fieldtype": "Small Text",
-   "label": "Short Description"
+   "label": "Short Description",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_jrtp",
@@ -112,7 +119,8 @@
    "fieldname": "product_image",
    "fieldtype": "Table",
    "label": "Product Images",
-   "options": "Product Image"
+   "options": "Product Image",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -130,7 +138,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-29 17:58:17.377382",
+ "modified": "2025-07-29 19:00:03.554461",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Products",
