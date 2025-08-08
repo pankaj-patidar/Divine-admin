@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:CART-{customer}",
  "creation": "2025-07-29 18:41:53.140376",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -59,10 +60,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-29 19:07:01.859973",
+ "modified": "2025-08-07 18:22:21.123200",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Cart",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

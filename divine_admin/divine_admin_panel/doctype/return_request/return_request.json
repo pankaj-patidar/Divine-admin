@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:RTUN-{order}",
  "creation": "2025-06-13 11:55:55.361702",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -60,10 +61,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 11:59:14.238393",
+ "modified": "2025-08-07 18:23:42.436898",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Return Request",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

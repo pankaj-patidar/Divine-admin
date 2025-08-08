@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:SHPMNT-{tracking_id}",
  "creation": "2025-06-13 10:55:54.892998",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,7 +11,8 @@
   "status",
   "column_break_iuiy",
   "tracking_id",
-  "shipment_date"
+  "shipment_date",
+  "seller"
  ],
  "fields": [
   {
@@ -51,15 +53,24 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Order Placed\nShipped\nIn-Transit\nDelivered\nDelayed"
+  },
+  {
+   "default": "User",
+   "fetch_if_empty": 1,
+   "fieldname": "seller",
+   "fieldtype": "Link",
+   "label": "Seller",
+   "options": "Seller"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 10:59:15.135729",
+ "modified": "2025-08-07 18:55:35.233148",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Shipment",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

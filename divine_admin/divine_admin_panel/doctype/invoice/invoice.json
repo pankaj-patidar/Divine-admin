@@ -14,7 +14,6 @@
   "invoice_number",
   "invoice_date",
   "order",
-  "seller",
   "section_break_olbh",
   "payment_method",
   "payment_status",
@@ -29,6 +28,7 @@
  ],
  "fields": [
   {
+   "columns": 2,
    "fieldname": "invoice_number",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -36,6 +36,7 @@
    "reqd": 1
   },
   {
+   "columns": 2,
    "fieldname": "order",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -51,20 +52,16 @@
   },
   {
    "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "Customer Name"
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "User"
   },
   {
+   "fetch_from": "customer_name.email",
    "fieldname": "customer_email",
    "fieldtype": "Data",
    "label": "Customer Email",
    "options": "Email"
-  },
-  {
-   "fieldname": "seller",
-   "fieldtype": "Link",
-   "label": "Seller",
-   "options": "Seller"
   },
   {
    "fieldname": "billing_address",
@@ -96,11 +93,14 @@
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Amount"
   },
   {
+   "columns": 2,
    "fieldname": "payment_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Payment Status",
    "options": "Unpaid\nPaid\nRefunded"
   },
@@ -140,7 +140,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 16:04:31.493955",
+ "modified": "2025-08-07 16:59:57.556394",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Invoice",

@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "column_break_derr",
   "product",
   "seller",
   "quantity",
@@ -13,6 +14,10 @@
   "total_price"
  ],
  "fields": [
+  {
+   "fieldname": "column_break_derr",
+   "fieldtype": "Column Break"
+  },
   {
    "fieldname": "product",
    "fieldtype": "Link",
@@ -23,12 +28,14 @@
   },
   {
    "fetch_from": "product.product_owner",
+   "fetch_if_empty": 1,
    "fieldname": "seller",
    "fieldtype": "Link",
    "label": "Seller",
    "options": "Seller"
   },
   {
+   "default": "1",
    "fieldname": "quantity",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -36,6 +43,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "product.selling_price",
    "fieldname": "price",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -52,7 +60,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-29 18:49:43.805462",
+ "modified": "2025-08-06 19:19:59.064035",
  "modified_by": "Administrator",
  "module": "Divine Admin Panel",
  "name": "Cart Item",
